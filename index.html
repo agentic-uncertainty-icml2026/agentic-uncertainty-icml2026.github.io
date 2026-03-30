@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Statistical Frameworks for Uncertainty in Agentic Systems | ICML 2026 Workshop</title>
+    <meta
+      name="description"
+      content="Official website for the ICML 2026 workshop Statistical Frameworks for Uncertainty in Agentic Systems."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Raleway:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="shell nav-shell">
+        <a class="brand" href="#top">
+          <span class="brand-text">
+            <strong>Uncertainty in Agentic Systems</strong>
+            <small>ICML 2026 Workshop</small>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="visually-hidden">Toggle navigation</span>
+          <i class="bi bi-list"></i>
+        </button>
+
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <a href="#overview">Overview</a>
+          <a href="#cfp">Call for papers</a>
+          <a href="#speakers">Speakers</a>
+          <a href="#schedule">Schedule</a>
+          <a href="#organizers">Organizers</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-orbit hero-orbit-a"></div>
+        <div class="hero-orbit hero-orbit-b"></div>
+        <div class="shell hero-grid">
+          <div class="hero-copy" data-reveal>
+            <p class="eyebrow">ICML 2026 workshop</p>
+            <h1>Statistical Frameworks for Uncertainty in Agentic Systems</h1>
+            <p class="hero-lead">
+              Modern agentic pipelines are hierarchical compositions of models, tools, and
+              subagents. This workshop studies how rigorous guarantees can support reliable
+              routing, monitoring, stopping, and uncertainty reporting in such systems.
+            </p>
+
+            <div class="hero-meta">
+              <div class="meta-pill">
+                <span class="meta-label">Venue</span>
+                <strong>COEX Convention & Exhibition Center</strong>
+                <small>Seoul, South Korea</small>
+              </div>
+              <div class="meta-pill">
+                <span class="meta-label">Workshop day</span>
+                <strong>To be set</strong>
+                <small>During ICML workshop days, July 10-11, 2026</small>
+              </div>
+              <div class="meta-pill">
+                <span class="meta-label">Submissions</span>
+                <strong>OpenReview link: coming soon</strong>
+                <small>ICML template, 8-page limit, non-archival, deadline April 21, 2026</small>
+              </div>
+            </div>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#cfp">View call for papers</a>
+              <a class="button button-secondary" href="#speakers">See confirmed speakers</a>
+            </div>
+          </div>
+
+          <aside class="hero-panel" data-reveal>
+            <div class="panel-card">
+              <p class="panel-kicker">Why this workshop</p>
+              <p>
+                Long-horizon agentic workloads mark a shift into a regime where declarative
+                systems adaptively build larger declarative systems. In this setting, uncertainty
+                quantification must address not only output-level error, but also adaptive
+                resource allocation: routing to tools and subagents, safeguards against
+                unnecessary spend, principled stopping under continuous monitoring, and
+                compositional guarantees across modular systems. The workshop brings together
+                conformal prediction, distribution-free risk control, prediction-powered
+                inference, calibration, and anytime-valid sequential inference in this setting.
+              </p>
+              <p class="hero-credit">
+                Photo:
+                <a href="https://commons.wikimedia.org/wiki/File:Seoul_cityscape_banner.jpg">Seoul cityscape banner</a>
+                by Malink_78, licensed under
+                <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="overview" class="section">
+        <div class="shell">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow">Overview</p>
+            <h2>About the workshop</h2>
+          </div>
+
+          <div class="overview-grid">
+            <article class="content-card overview-copy" data-reveal>
+              <p>
+                The workshop aims to connect the fast-moving agentic systems community with the
+                literature on finite-sample and distribution-free guarantees.
+              </p>
+              <p>
+                It will bring together researchers working on conformal prediction, calibration,
+                prediction-powered inference, sequential testing, and reliable LLM evaluation
+                around a common view of uncertainty in agentic systems.
+              </p>
+            </article>
+
+            <article class="content-card overview-themes" data-reveal>
+              <h3>Themes</h3>
+              <ul class="theme-list">
+                <li>
+                  Distribution-free validity layers for coverage, risk, and
+                  abstention under heterogeneity and distribution shift.
+                </li>
+                <li>
+                  Anytime-valid sequential inference for continuous
+                  monitoring, evidence aggregation, and principled stopping.
+                </li>
+                <li>
+                  Uncertainty reporting for interactive components and
+                  inter-agent interaction, including auditing and verification when feedback or
+                  external services are involved.
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="cfp" class="section section-alt">
+        <div class="shell">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow">Call for Papers</p>
+            <h2>Call for papers</h2>
+          </div>
+
+          <div class="cfp-grid">
+            <article class="content-card" data-reveal>
+              <h3>Topics</h3>
+              <p>
+                We invite submissions on the foundations of uncertainty in agentic
+                systems. We welcome theoretical, methodological, and empirical contributions, as
+                well as benchmarks and application-driven case studies.
+              </p>
+              <p>
+                Topics of interest include, but are not limited to:
+              </p>
+              <ul class="topic-list">
+                <li>Conformal prediction and distribution-free risk control for LLM or agent outputs</li>
+                <li>Calibration and uncertainty reporting for generative models</li>
+                <li>Selective prediction, abstention, and hallucination mitigation</li>
+                <li>Sequential monitoring, evidence aggregation, and stopping rules</li>
+                <li>Prediction-powered inference with noisy or machine-generated labels</li>
+                <li>Uncertainty under prompt variation, adaptivity, and distribution shift</li>
+                <li>Auditing and verification for tool use and external feedback loops</li>
+                <li>Compositional guarantees across multi-stage or multi-agent workflows</li>
+                <li>Benchmarks and evaluation protocols for reliable agentic behavior</li>
+                <li>Applications in science, medicine, safety-critical systems, and decision support</li>
+              </ul>
+            </article>
+
+            <article class="content-card" data-reveal>
+              <h3>Submission details</h3>
+              <p>
+                Submissions should present recent or ongoing work relevant to the workshop themes.
+                The workshop is intended to provide a focused venue for discussion at the
+                intersection of modern agentic systems and rigorous uncertainty
+                quantification.
+              </p>
+              <dl class="detail-list">
+                <div>
+                  <dt>Submission portal</dt>
+                  <dd>OpenReview link: coming soon</dd>
+                </div>
+                <div>
+                  <dt>Submission template</dt>
+                  <dd>Submissions should use the official ICML template</dd>
+                </div>
+                <div>
+                  <dt>Page limit</dt>
+                  <dd>Submissions may be up to 8 pages of main content. Shorter submissions are also welcome.</dd>
+                </div>
+                <div>
+                  <dt>Archival policy</dt>
+                  <dd>Submissions are non-archival</dd>
+                </div>
+                <div>
+                  <dt>Presentation</dt>
+                  <dd>Accepted workshop papers will appear as posters; selected papers will be invited for contributed spotlight talks</dd>
+                </div>
+                <div>
+                  <dt>Scope</dt>
+                  <dd>Previously published, concurrently submitted, and ongoing work may be considered</dd>
+                </div>
+              </dl>
+
+              <div class="timeline-card">
+                <h4>Important dates</h4>
+                <ul class="timeline-list">
+                  <li>
+                    <span>Workshop contribution deadline</span>
+                    <strong>April 21, 2026</strong>
+                  </li>
+                  <li>
+                    <span>Notification of acceptance</span>
+                    <strong>May 15, 2026</strong>
+                  </li>
+                  <li>
+                    <span>Workshop day</span>
+                    <strong>To be set</strong>
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="speakers" class="section">
+        <div class="shell">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow">Confirmed Speakers</p>
+            <h2>Speakers</h2>
+          </div>
+
+          <div class="people-grid">
+            <article class="person-card" data-reveal>
+              <div class="person-photo">
+                <img
+                  src="assets/img/people/yarin-gal.jpg"
+                  alt="Yarin Gal"
+                  style="object-position: 50% 24%;"
+                >
+              </div>
+              <div class="person-body">
+                <h3>Yarin Gal</h3>
+                <p class="person-role">Professor of Machine Learning</p>
+                <p class="person-affiliation">University of Oxford</p>
+                <a href="https://www.cs.ox.ac.uk/people/yarin.gal/website/">Website</a>
+              </div>
+            </article>
+
+            <article class="person-card" data-reveal>
+              <div class="person-photo">
+                <img
+                  src="assets/img/people/adam-fisch.png"
+                  alt="Adam Fisch"
+                  style="object-position: 50% 30%;"
+                >
+              </div>
+              <div class="person-body">
+                <h3>Adam Fisch</h3>
+                <p class="person-role">Research Scientist</p>
+                <p class="person-affiliation">Google DeepMind</p>
+                <a href="https://people.csail.mit.edu/fisch/">Website</a>
+              </div>
+            </article>
+
+            <article class="person-card" data-reveal>
+              <div class="person-photo">
+                <img
+                  src="assets/img/people/ying-jin.jpg"
+                  alt="Ying Jin"
+                  style="object-position: 50% 20%;"
+                >
+              </div>
+              <div class="person-body">
+                <h3>Ying Jin</h3>
+                <p class="person-role">Assistant Professor of Statistics and Data Science</p>
+                <p class="person-affiliation">University of Pennsylvania</p>
+                <a href="https://statistics.wharton.upenn.edu/profile/yjinstat/">Profile</a>
+              </div>
+            </article>
+
+            <article class="person-card" data-reveal>
+              <div class="person-photo">
+                <img
+                  src="assets/img/people/yaniv-romano.jpg"
+                  alt="Yaniv Romano"
+                  style="object-position: 50% 18%;"
+                >
+              </div>
+              <div class="person-body">
+                <h3>Yaniv Romano</h3>
+                <p class="person-role">Associate Professor of Electrical Engineering and Computer Science</p>
+                <p class="person-affiliation">Technion</p>
+                <a href="https://sites.google.com/view/yaniv-romano">Website</a>
+              </div>
+            </article>
+
+            <article class="person-card" data-reveal>
+              <div class="person-photo">
+                <img
+                  src="assets/img/people/andreas-vlachos.webp"
+                  alt="Andreas Vlachos"
+                  style="object-position: 50% 15%;"
+                >
+              </div>
+              <div class="person-body">
+                <h3>Andreas Vlachos</h3>
+                <p class="person-role">Professor of Natural Language Processing and Machine Learning</p>
+                <p class="person-affiliation">University of Cambridge</p>
+                <a href="https://andreasvlachos.github.io/">Website</a>
+              </div>
+            </article>
+
+            <article class="person-card" data-reveal>
+              <div class="person-photo person-photo-contained">
+                <img
+                  src="assets/img/people/seong-joon-oh.png"
+                  alt="Seong Joon Oh"
+                  style="object-position: 50% 24%;"
+                >
+              </div>
+              <div class="person-body">
+                <h3>Seong Joon Oh</h3>
+                <p class="person-role">Associate Professor</p>
+                <p class="person-affiliation">KAIST AI</p>
+                <a href="https://seongjoonoh.com/">Website</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="schedule" class="section section-alt">
+        <div class="shell">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow">Schedule</p>
+            <h2>Schedule</h2>
+          </div>
+
+          <div class="schedule-grid">
+            <article class="content-card" data-reveal>
+              <h3>Preliminary structure</h3>
+              <p>
+                The final workshop day and exact timetable will be posted later. The workshop is
+                expected to follow the structure below, with invited talks, contributed
+                spotlights, a panel discussion, and a poster session.
+              </p>
+              <p>
+                Per the ICML 2026 workshop guidance, workshops typically begin around
+                <strong>8:00 AM</strong> and conclude by <strong>5:00 PM</strong>.
+              </p>
+              <ul class="schedule-list">
+                <li><span>08:00-08:10</span><strong>Opening remarks</strong></li>
+                <li><span>Morning</span><strong>Invited talks and contributed talks</strong></li>
+                <li><span>Midday</span><strong>Break</strong></li>
+                <li><span>Afternoon</span><strong>Invited talks and panel discussion</strong></li>
+                <li><span>Late afternoon</span><strong>Poster session</strong></li>
+              </ul>
+              <p class="timeline-note">Detailed times, titles, and panel composition will be specified later.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="organizers" class="section">
+        <div class="shell">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow">Organizers</p>
+            <h2>Organizers</h2>
+          </div>
+
+          <div class="people-grid">
+            <article class="person-card person-card-organizer" data-reveal>
+              <div class="person-photo">
+                <img
+                  src="assets/img/people/aymeric-dieuleveut.jpg"
+                  alt="Aymeric Dieuleveut"
+                  style="object-position: 50% 18%;"
+                >
+              </div>
+              <div class="person-body">
+                <h3>Aymeric Dieuleveut</h3>
+                <p class="person-role">Professor of Statistics and Machine Learning</p>
+                <p class="person-affiliation">École polytechnique</p>
+                <a href="https://www.cmap.polytechnique.fr/~aymeric.dieuleveut/">Website</a>
+              </div>
+            </article>
+
+            <article class="person-card person-card-organizer" data-reveal>
+              <div class="person-photo">
+                <img
+                  src="assets/img/people/maxim-panov.jpg"
+                  alt="Maxim Panov"
+                  style="object-position: 50% 20%;"
+                >
+              </div>
+              <div class="person-body">
+                <h3>Maxim Panov</h3>
+                <p class="person-role">Assistant Professor of Machine Learning</p>
+                <p class="person-affiliation">MBZUAI</p>
+                <a href="https://mbzuai.ac.ae/study/faculty/maxim-panov/">Profile</a>
+              </div>
+            </article>
+
+            <article class="person-card person-card-organizer" data-reveal>
+              <div class="person-photo">
+                <img
+                  src="assets/img/people/stephen-bates.jpg"
+                  alt="Stephen Bates"
+                  style="object-position: 50% 18%;"
+                >
+              </div>
+              <div class="person-body">
+                <h3>Stephen Bates</h3>
+                <p class="person-role">Assistant Professor</p>
+                <p class="person-affiliation">MIT</p>
+                <a href="https://stephenbates19.github.io/">Website</a>
+              </div>
+            </article>
+
+            <article class="person-card person-card-organizer" data-reveal>
+              <div class="person-photo">
+                <img
+                  src="assets/img/people/mahmoud-hegazy.png"
+                  alt="Mahmoud Hegazy"
+                  style="object-position: 50% 20%;"
+                >
+              </div>
+              <div class="person-body">
+                <h3>Mahmoud Hegazy</h3>
+                <p class="person-role">PhD Student</p>
+                <p class="person-affiliation">École polytechnique and Inria Paris</p>
+                <a href="https://mahegz.github.io/">Website</a>
+              </div>
+            </article>
+
+            <article class="person-card person-card-organizer" data-reveal>
+              <div class="person-photo">
+                <img
+                  src="assets/img/people/aaditya-ramdas.jpg"
+                  alt="Aaditya Ramdas"
+                  style="object-position: 50% 14%;"
+                >
+              </div>
+              <div class="person-body">
+                <h3>Aaditya Ramdas</h3>
+                <p class="person-role">Associate Professor</p>
+                <p class="person-affiliation">Carnegie Mellon University</p>
+                <a href="https://www.stat.cmu.edu/~aramdas/">Website</a>
+              </div>
+            </article>
+
+            <article class="person-card person-card-organizer" data-reveal>
+              <div class="person-photo">
+                <img
+                  src="assets/img/people/tijana-zrnic.jpg"
+                  alt="Tijana Zrnic"
+                  style="object-position: 50% 18%;"
+                >
+              </div>
+              <div class="person-body">
+                <h3>Tijana Zrnic</h3>
+                <p class="person-role">Assistant Professor</p>
+                <p class="person-affiliation">Stanford University</p>
+                <a href="https://tijana-zrnic.github.io/">Website</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="shell">
+          <div class="contact-card" data-reveal>
+            <p class="eyebrow">Contact</p>
+            <h2>Contact</h2>
+            <p class="contact-links">
+              <a href="mailto:agenticuncertaintyicml2026@gmail.com">agenticuncertaintyicml2026@gmail.com</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-shell">
+        <p>Statistical Frameworks for Uncertainty in Agentic Systems</p>
+        <p>ICML 2026 • Seoul, South Korea • Workshop day to be set</p>
+        <p class="footer-credit">
+          Adapted from the
+          <a href="https://bootstrapmade.com/theevent-conference-event-bootstrap-template/">TheEvent</a>
+          conference template, with structure inspired by
+          <a href="https://calibration-workshop.github.io/">calibration-workshop.github.io</a>.
+        </p>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
