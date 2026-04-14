@@ -242,6 +242,11 @@ p {
   line-height: 1.5;
 }
 
+.deadline-old {
+  margin-right: 0.35rem;
+  color: var(--muted);
+}
+
 .hero-actions {
   display: flex;
   justify-content: center;
@@ -459,6 +464,12 @@ p {
   margin: 0;
 }
 
+.submission-note,
+.timeline-note,
+.contact-note {
+  color: var(--muted);
+}
+
 .timeline-card {
   padding-top: 0.35rem;
 }
@@ -482,9 +493,7 @@ p {
   padding-top: 0;
 }
 
-.timeline-list span,
-.timeline-note,
-.contact-note {
+.timeline-list span {
   color: var(--muted);
 }
 
